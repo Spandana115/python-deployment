@@ -8,4 +8,4 @@ cd /home/ubuntu/
 git clone https://github.com/bhargavibairagoni/indian-liver-patients.git
 cd /indian-liver-patients
 pip3 install -r requirements.txt
-screen -m -d python3 ./app.py
+python3 app.py
