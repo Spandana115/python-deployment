@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fish-deployment
+  labels: 
+    app: fish-app
+    tier: python-app
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      tier: python-app
+  template:
+    metadata:
+      labels:
+        tier: python-app
+    spec:
+      containers:
+      - name: container
+        image: bhargavibairagoni/fish-app:python-deployment
+        ports:
+        - containerPort: 80
