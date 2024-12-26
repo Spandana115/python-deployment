@@ -23,7 +23,7 @@ cidr_blocks=["0.0.0.0/0"]
 }
 
 ingress{
-from_port=9000
+from_port=9010
 to_port=9000
 protocol="tcp"
 cidr_blocks=["0.0.0.0/0"]
