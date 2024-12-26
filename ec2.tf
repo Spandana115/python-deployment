@@ -8,13 +8,11 @@ subnet_id="${aws_subnet.public_subnet-1.id}"
 associate_public_ip_address=true
 user_data="${file("data.sh")}"
 tags={
-Name="My pollscm "
+Name="My pollscm  1"
 }
 }
-
 resource "aws_security_group" "demosg" {
 vpc_id="${aws_vpc.demovpc.id}"
-
 ingress{
 from_port=80
 to_port=80
