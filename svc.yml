@@ -3,8 +3,10 @@ kind: Service
 metadata:
   name: fish-service
 spec:
-  type: LoadBalancer
-  ports:
-  - port: 80
   selector:
-    tier: python-app
+    tier:python-app
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8000
+  type: LoadBalancer
