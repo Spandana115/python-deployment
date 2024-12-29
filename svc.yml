@@ -4,7 +4,7 @@ metadata:
   name: fish-service
 spec:
   selector:
-    tier:python-app
+    tier: python-app
   ports:
   - protocol: TCP
     port: 80
