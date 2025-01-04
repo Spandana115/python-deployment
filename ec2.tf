@@ -8,7 +8,7 @@ subnet_id="${aws_subnet.public_subnet-1.id}"
 associate_public_ip_address=true
 user_data="${file("data.sh")}"
 tags={
-Name="My pollscm 2"
+Name="Terraform"
 }
 }
 resource "aws_security_group" "demosg" {
